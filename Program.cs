@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-
+using System.Data;
 // Kitap önerisi : Sefer Algan - Her Yönüyle C#
 #region Convert Tip Dönüşümü
 
@@ -60,19 +60,19 @@
 // Cast
 // Parse
 // ToString
- 
- // Parse : Parse bir tip için özelleşmiş bir tip dönüşümüdür.
- // Parse, string tipindeki verileri, diğer tiplere çevirmek için kullanılır. Yani parse sadece string alır.
- // string değişken tipi c#da çok fazla kullanıldığı için, parse string tipine özel olarak üretilmiştir.
- // amacı, hızlı bir şekilde, string tipini farklı tiplere çevirmektir.
- // başka bir sebebide, kullanıcıdan alınan değerler string'dir. Bu yüzden de string'e özel bir dönüştürme mekanizması vardır.
 
- // Örnek ve Syntax
+// Parse : Parse bir tip için özelleşmiş bir tip dönüşümüdür.
+// Parse, string tipindeki verileri, diğer tiplere çevirmek için kullanılır. Yani parse sadece string alır.
+// string değişken tipi c#da çok fazla kullanıldığı için, parse string tipine özel olarak üretilmiştir.
+// amacı, hızlı bir şekilde, string tipini farklı tiplere çevirmektir.
+// başka bir sebebide, kullanıcıdan alınan değerler string'dir. Bu yüzden de string'e özel bir dönüştürme mekanizması vardır.
+
+// Örnek ve Syntax
 
 // string tipini int tipine dönüştürelim
- //string metin = "10";
- //int intDegisken = int.Parse(metin);
- //Console.WriteLine(intDegisken);
+//string metin = "10";
+//int intDegisken = int.Parse(metin);
+//Console.WriteLine(intDegisken);
 
 
 // string tipini char tipine dönüştürelim
@@ -82,11 +82,73 @@
 
 
 // string değeri bool tipine çevirelim
-string metin ="false";
-bool boolDegisken = bool.Parse(metin);
-Console.WriteLine(boolDegisken);
+//string metin ="false";
+//bool boolDegisken = bool.Parse(metin);
+//Console.WriteLine(boolDegisken);
 
 
-// 
+// Kullanıcıdan iki farklı sayısal değer alıp, bu sayısal değerleri,
+// Ekrana toplama-çıkartma-çarpma ve bölme yapacak şekilde yazdırın, 
+//buradaki tip dönümlerinde, parse kullanın
+
+
+
 
 #endregion
+
+#region Random Konusu
+
+// Araya konu serpiştirelim
+// C# ile random bir sayı oluşturabilirsiniz
+// belirli bir aralık vererek yada vermeyerek, c#'in size bir sayı vermesini sağlayabilirsiniz
+
+// random bize, rakamsal tiplerin sınırları içerisinde random bir değer üretip verecektir.
+
+//Random rnd = new Random();
+//int intRandom = rnd.Next();
+//Console.WriteLine(intRandom);
+
+// next fonksiyonu içerisinde iki parametre girerseniz, bu iki değer araında random bir değer üretip size dönecektir.
+//Random rnd = new Random();
+//int randomInt=rnd.Next(1,5);
+//Console.WriteLine(randomInt);
+
+
+// double tipinde bir random oluşturabiliriz.
+//Random rnd =new Random();
+//double randomDouble = rnd.NextDouble();
+//Console.WriteLine(randomDouble);
+#endregion
+
+#region ToString
+
+// tip dönüşümlerinden 3. sırayı alan dönüşüm tipi, ToString'dir.
+// ToString tip dönüşümü, parse tip dönüşümünün tersi olarak çalışır.
+
+// yani parse,string tipinden diğer tiplere dönüşüm sağlarken
+// ToString'de, diğer tiplerden, string tipine dönüşüm sağlar.
+//ToString tip dönüşümü, dönüştürmek istediğimiz değişkenin sonuna ToString fonksiyonunu kullanarak uygulanır.
+
+
+// Örnek : 
+//int intDegisken =10;
+//string stringDegisken = intDegisken.ToString();
+
+// Console.WriteLine içerisinde yazdığınız string tipi dışındaki tüm değişkenleri ekrana yazdırırken ToString basar, yani siz farketmezsenizde, WriteLine metodu arka tarafta toString çağırır.
+//Console.WriteLine(10);
+
+#endregion
+// cast, bu konuyu yarına bırakacam!!!
+
+
+// Parse metodu ile yapılacak örnekler
+// Örnek : Random çektirdiğiniz sayının tek sayımı çift sayımı olduğunu ekrana yazdırınız
+// tek sayı ise, true çift sayı ise false
+
+// Örnek : küçük harf olarak girilen bir char'i, int tipi kullanarak, büyük harfe çevirin
+// char tipi, int tipine dönüştürülecek, 
+//arka tarafta olan sayı bulunacak, sonrasında bulunan sayıya 32 çıkartılacak, 
+//bulunan yeni rakam tekrar string tipine çevrilecek
+
+Random rnd =new Random();
+int randomDegisken =rnd.Next();

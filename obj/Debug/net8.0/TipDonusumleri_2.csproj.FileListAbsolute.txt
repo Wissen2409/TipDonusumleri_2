@@ -12,3 +12,4 @@
 /Users/emrahelis/Desktop/TipDonusumleri_2/obj/Debug/net8.0/TipDonusumleri_2.pdb
 /Users/emrahelis/Desktop/TipDonusumleri_2/obj/Debug/net8.0/TipDonusumleri_2.genruntimeconfig.cache
 /Users/emrahelis/Desktop/TipDonusumleri_2/obj/Debug/net8.0/ref/TipDonusumleri_2.dll
+/Users/emrahelis/Desktop/TipDonusumleri_2/obj/Debug/net8.0/TipDonusumleri_2.sourcelink.json
