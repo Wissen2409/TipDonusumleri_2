@@ -172,6 +172,65 @@ Console.Write(Convert.ToChar(randomChar2));
 // Çözüm 2
 // Random fonksiyonu char tipine göre de çalışmaktadır.
 
-Random rnd = new Random();
-Console.Write(Convert.ToChar(rnd.Next('a','z')));
-Console.Write(Convert.ToChar(rnd.Next('a','z')));
+//Random rnd = new Random();
+//Console.Write(Convert.ToChar(rnd.Next('a','z')));
+//Console.Write(Convert.ToChar(rnd.Next('a','z')));
+
+
+
+// Cast Tip Dönüşümü
+// Cast tip dönüşümü ikiye ayrılmaktaıdr.
+
+// Implicit Tip Dönüşümü => (Bilinçsiz tip dönüşümü)
+// Explicit Tip Dönüşümü => (Bilinçli  tip dönüşümü)
+
+// Implicit Örnek : 
+
+// Byte tipindeki bir değişken int tipine dönüştürüldü.
+// Cast tip dönüşümünde, küçük tip, büyük tipe dönüştürülüyorsa, büyük tip, küçük tipin 
+//taşıyabileceği değeri taşıyabileceği için buradaki tip dönüşümü c# tarafından yapılır. Tip dönüşümü için extra bir şeyler yazmaya gerek kalmaz.
+// Bu tip dönüşümüne, bilinçsiz tip dönüşümü denir
+
+//byte byteDegisken = 10;
+//int intDegisken =byteDegisken;
+//Console.WriteLine(intDegisken);
+
+// Explicit Tip Dönüşümü : 
+// Yukarıdaki işlemin tam tersini yapalım. 
+
+
+//int intDegisken =10;
+//byte byteDegisken = (byte)intDegisken;
+
+//Console.WriteLine(byteDegisken);
+// int tipinin içerisindeki değer, byte tipinin taşıyabileceğini kadar, bu durumda zaten bilinlçi bir tip dönüşümü ile tip dönüşümü yaptık
+
+// Tam tersi durumda, int tipinin değerinin byte tipinin taşıyamayacağı kadar büyük olması durumuna bakalım
+//int intDegisken =400;
+//byte byteDegisken = (byte)intDegisken;
+//Console.WriteLine(byteDegisken);
+
+// ufak bir tip dönüşümü bile, yazılım taraında, değerlerin değişmesine beklenilen değerlerin dışında değerle çıkmasına sebebiyet verdi.
+
+// Convert : c#da önceden tanımlı olan 15 adet tipi birbirine dönüştürmek için kullanılır.
+// Cast : hem önceden tanımlı 15 tipi birbirine çevirir, hemde ileride göreceğimiz, kendi tipimizi yazma konusunda bu tipleride birbirine dönüştürebilir.
+
+// Log tipi dönüşümü
+//long logDegisken =10;
+//int intDegisken = (int)logDegisken;
+//Console.WriteLine(intDegisken);
+
+// int char dönüşümü
+//int intDegisken = 98;
+//char charDegisken = (char)intDegisken;
+//Console.WriteLine(charDegisken);
+
+// bool int dönüşümü
+// cast yöntemi ile bool int'e dönüşmez(Convert kullanılması gerekiyor.)
+//bool boolDegisken =true;
+//int intDegisken = (int)boolDegisken;
+
+//string char dönüşümü
+// Cast yöntemi ile string tipi herhangi bir tipe dönüştürülemez.
+//string stringDegisken = "a";
+//char charDegisken = (char)stringDegisken;
