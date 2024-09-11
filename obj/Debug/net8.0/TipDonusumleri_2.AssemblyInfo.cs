@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TipDonusumleri_2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f6afbfe3d63125007ed1251d19c2e81c37e6c3bc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b5de6907fcb54bcad3b67a6bbdbbabf3114133b9")]
 [assembly: System.Reflection.AssemblyProductAttribute("TipDonusumleri_2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TipDonusumleri_2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

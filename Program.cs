@@ -150,5 +150,28 @@ using System.Data;
 //arka tarafta olan sayı bulunacak, sonrasında bulunan sayıya 32 çıkartılacak, 
 //bulunan yeni rakam tekrar string tipine çevrilecek
 
-Random rnd =new Random();
-int randomDegisken =rnd.Next();
+//Random rnd =new Random();
+//int randomDegisken =rnd.Next();
+
+// Örnek uygulama----
+// Ekrana iki tane random oluşturulmuş karakter yazdıralım(her çalıştırmada farklı iki karakter versin)
+
+
+// 97 ile 122 arasındaki karakterler küçük harf ingiliz alfabesi harfleri
+
+// Çözüm 1
+/*
+Random rnd = new Random();
+int randomChar1 = rnd.Next(97,122);
+int randomChar2 = rnd.Next(97,122);
+Console.Write(Convert.ToChar(randomChar1));
+
+Console.Write(Convert.ToChar(randomChar2));
+*/
+
+// Çözüm 2
+// Random fonksiyonu char tipine göre de çalışmaktadır.
+
+Random rnd = new Random();
+Console.Write(Convert.ToChar(rnd.Next('a','z')));
+Console.Write(Convert.ToChar(rnd.Next('a','z')));
